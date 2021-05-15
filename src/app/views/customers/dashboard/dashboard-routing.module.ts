@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardBookingComponent } from './dashboard-booking/dashboard-booking.component';
 import { DashboardCheckoutComponent } from './dashboard-checkout/dashboard-checkout.component';
+import { DashboardHistoryComponent } from './dashboard-history/dashboard-history.component';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
 import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.component';
 import { DashboardManageComponent } from './dashboard-manage/dashboard-manage.component';
+import { DashboardProfileComponent } from './dashboard-profile/dashboard-profile.component';
 import { DashboardServiceComponent } from './dashboard-service/dashboard-service.component';
 
 const dashboard_routes: Routes = [
@@ -18,7 +20,8 @@ const dashboard_routes: Routes = [
             { path: 'service-checkout', component: DashboardCheckoutComponent },
             { path: 'booking', component: DashboardBookingComponent },
             { path: 'manage', component: DashboardManageComponent },
-            { path: 'history', component: DashboardManageComponent }
+            { path: 'history', component: DashboardHistoryComponent },
+            { path: 'profile', component: DashboardProfileComponent }
         ]
     }
 ];

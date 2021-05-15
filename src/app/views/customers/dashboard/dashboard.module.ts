@@ -9,11 +9,12 @@ import { DashboardBookingComponent } from './dashboard-booking/dashboard-booking
 import { DashboardManageComponent } from './dashboard-manage/dashboard-manage.component';
 import { DashboardHistoryComponent } from './dashboard-history/dashboard-history.component';
 import { DashboardCheckoutComponent } from './dashboard-checkout/dashboard-checkout.component';
+import { DashboardProfileComponent } from './dashboard-profile/dashboard-profile.component';
 
 
 
 @NgModule({
-  declarations: [DashboardLayoutComponent, DashboardHomeComponent, DashboardServiceComponent, DashboardBookingComponent, DashboardManageComponent, DashboardHistoryComponent, DashboardCheckoutComponent],
+  declarations: [DashboardLayoutComponent, DashboardHomeComponent, DashboardServiceComponent, DashboardBookingComponent, DashboardManageComponent, DashboardHistoryComponent, DashboardCheckoutComponent, DashboardProfileComponent],
   imports: [
     CommonModule,
     SharedModule,
