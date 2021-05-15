@@ -5,6 +5,7 @@
     --color-red: #ff1654;
     --color-blue: #3b76ef;
     --color-grey: #abb4bd;
+    --color-orange: #f2994a;
 }
 
 * {
@@ -21,6 +22,10 @@
 
 .text-grey {
     color: var(--color-grey);
+}
+
+.text-orange {
+    color: var(--color-orange);
 }
 
 /* Button */
