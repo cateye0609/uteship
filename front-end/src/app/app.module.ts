@@ -8,7 +8,7 @@ import { CustomerModule } from './views/customers/customer.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { User } from '../../../../model/user.model';
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/api/user.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-login',
@@ -11,7 +12,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class HomeLoginComponent implements OnInit {
   dataUser: User[] = [];
 
-  constructor(private userService: UserService) {}
+  constructor(
+    private userService: UserService,
+    private router: Router
+  ) { }
   loginTypeForm = new FormGroup({
     name: new FormControl(),
     password: new FormControl(),
@@ -34,5 +38,7 @@ export class HomeLoginComponent implements OnInit {
       } else {
         console.log(false);
       }
+
+    this.router.navigate(['/customer/dashboard']);
   }
 }

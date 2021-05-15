@@ -1,0 +1,22 @@
+.left-panel {
+    background-color: var(--color-primary);
+    color: white;
+    height: 100vh;
+}
+
+.left-panel .user-info img {
+    border-radius: 50%;
+}
+
+.left-panel ul.navigation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.left-panel ul.navigation-list .navigation-list-item {
+    padding-bottom: 2em;
+}
+
+.left-panel ul.navigation-list .navigation-list-item i {
+    margin-right: 5px;
+}
