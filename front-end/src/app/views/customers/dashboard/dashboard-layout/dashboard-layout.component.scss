@@ -14,7 +14,18 @@
 }
 
 .left-panel ul.navigation-list .navigation-list-item {
-    padding-bottom: 2em;
+    padding: 5px;
+    margin-bottom: 2em;
+}
+
+.left-panel ul.navigation-list .navigation-list-item.active {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.left-panel ul.navigation-list .navigation-list-item a {
+    color: white;
+    text-decoration: none;
 }
 
 .left-panel ul.navigation-list .navigation-list-item i {
