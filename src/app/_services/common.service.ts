@@ -21,7 +21,7 @@ export class CommonService {
       } else {
         // Handle Http Error (error.status === 403, 404...)
         console.error(`${error.status} - ${error.message}`);
-        this.toastr.error(error.error.title);
+        this.toastr.error(error.error.title || error.error.message);
       }
     } else {
       // Client Error

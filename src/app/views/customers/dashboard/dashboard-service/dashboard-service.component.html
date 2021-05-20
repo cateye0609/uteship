@@ -1,17 +1,25 @@
 <div class="service-container">
   <!-- items list -->
   <div class="items-list">
-    <ng-container *ngFor="let item of [].constructor(5);">
+    <ng-container *ngFor="let package of packages">
       <!-- item -->
       <div class="card my-4 p-2">
         <div class="row">
           <div class="col-10">
             <div class="row mb-2">
               <div class="col-6">
-                <span>Mã dịch vụ: </span>
+                <span>Mã dịch vụ: {{package.id}}</span>
               </div>
               <div class="col-6">
-                <span>Thông tin chi tiết: </span>
+                <span>Thông tin chi tiết: {{package.description}}</span>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-6">
+                <span>Loại: {{package.type}}</span>
+              </div>
+              <div class="col-6">
+                <span>Giá: {{package.price}}</span>
               </div>
             </div>
             <span>Tình trạng: </span>
