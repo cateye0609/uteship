@@ -1,4 +1,4 @@
-export class User {
+export interface User {
   id: string;
   name: string;
   birthDate: Date;
@@ -7,4 +7,9 @@ export class User {
   password: string;
   phone: number;
   address: string;
+  role: number;
+  status: number;
+  point: number;
+  jwtToken: string;
+  refreshToken: string;
 }
